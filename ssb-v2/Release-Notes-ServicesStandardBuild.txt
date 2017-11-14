@@ -1,0 +1,64 @@
+Patch Revision: 2.0.3
+Released: 18 January 2017
+
+****************************************
+BUGS FIXED IN THIS REVISION:
+****************************************
+ - SSB now correctly handles environment-specific build.properties files
+
+
+
+Patch Revision: 2.0.2
+Released: 8 December 2016
+
+****************************************
+BUGS FIXED IN THIS REVISION:
+****************************************
+ - Modified names of example custom SSB scripts so that they do not execute by default 
+
+
+
+Patch Revision: 2.0.1
+Released: 10 November 2016
+
+****************************************
+BUGS FIXED IN THIS REVISION:
+****************************************
+ - Build was failing if there were two tokens on the same line
+ - Multi-line tokens were not working
+ - Token validation failed when directory path had spaces
+ - Build was failing if target.properties was empty
+ - Missing tokens write back to target.properties was removing token on first line
+ - Importdynamic console_user and console_pass must now be lower case as previously 
+   documented
+
+
+
+Release: SSB v2 
+Released: 10 October 2016
+
+****************************************
+OVERVIEW OF RELEASE
+****************************************
+
+Version 2 of the Services Standard Build (SSB) contains several new 
+features and fixes.
+
+
+****************************************
+NEW TO THIS RELEASE:
+****************************************
+
+SSB: 
+    - A standalone version of the SSB is now available independently of the SSD
+    - Ability to run importdynamic with a non-default username and password
+    - Build process will now detect tokens that are missing from target.properties, prompt
+      the user to enter a value and insert this into target.properties
+    - Updates to SSB User Guide
+    - Bug fixes
+        - Customer-specific jar of custom classes was not being added during build
+        - Presence of specified patch jar file was not being correctly verified
+        - ALTER statements in multi-statement transaction caused issues in SQL Server when 
+          executing database scripts
+    
+
